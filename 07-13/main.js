@@ -113,18 +113,18 @@
 
 
 
-const politician = {
-    platform: {
-        money: ["I like it", "I have lots of it", "I don't want other people to have any"],
-        health: ["I'm against it"]
-    },
-    district: "Michigan 13"
-}
+// const politician = {
+//     platform: {
+//         money: ["I like it", "I have lots of it", "I don't want other people to have any"],
+//         health: ["I'm against it"]
+//     },
+//     district: "Michigan 13"
+// }
 
-for (const policy of politician.platform.money) {
-    console.log(policy)
+// for (const policy of politician.platform.money) {
+//     console.log(policy)
 
-}
+// }
 
 
 // const foods = {
@@ -142,3 +142,35 @@ for (const policy of politician.platform.money) {
 // }
 
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+// 1. Create a function that logs the result of adding two numbers that were passed in as arguments.
+// 2. Create another function that logs the result of subtracting two numbers that were passed in as arguments.
+// 3. Invoke each function a couple times with different argument values.
+
+
+function add(a, b){
+    console.log("Yay we are adding!!", a + b)
+}
+function sub(a, b){
+    console.log("Yay we are subtracting!!", a - b)
+}
+
+function calculate(a,b,operator){
+    operator(a,b)
+}
+add(5,6)
+sub(7,4)
+add(13,50)
+sub(3.14,2)
+calculate(1,3,add)
